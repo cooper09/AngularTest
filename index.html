@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="testApp">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Test App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script data-require="angular.js@1.0.x" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.js" data-semver="1.0.7"></script>
+    <script src="app.js"></script>
+    <style>
+      #colorMePink {
+          height: 36px;
+          width: 120px;
+          margin: 10px;
+          background-color: pink;
+          color: red;
+          padding: 1em;
+        }
+    </style>
+  </head>
+
+  <body ng-controller="testCtrl" ng-init="init()">
+   
+   <div id="colorMePink" ng-show="showMe">
+      Hello
+   </div> 
+   <button ng-click="showMe = !showMe">Click Me</button>
+  </body>
+
+</html>
